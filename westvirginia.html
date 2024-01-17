@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Virginia History Trivia</title>
+    <!-- Include Bootstrap and CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>West Virginia History Trivia</h1>
+
+        <script>
+            // Function to handle button click
+            function checkAnswer(button) {
+                var answer = button.getAttribute('data-answer');
+                var response = document.getElementById('response');
+
+                if (answer === 'correct') {
+                    button.style.backgroundColor = 'green';
+                    response.innerHTML = 'Correct!';
+                    response.style.color = 'green';
+                } else {
+                    button.style.backgroundColor = 'red';
+                    response.innerHTML = 'Incorrect';
+                    response.style.color = 'red';
+
+                    setTimeout(function () {
+                        button.innerHTML = 'Incorrect!';
+                        button.style.backgroundColor = 'lavender';
+                        response.innerHTML = ''; // Clear response text
+                    }, 1000);
+                }
+            }
+
+    </script>
+<script>
+    <div id="response"></div>
+</script>
+        <!-- Question 1 -->
+<div class="question">
+    <h3>Question 1: What year did West Virginia become a state?</h3>
+    <ul class="answers">
+        <button data-answer="incorrect" onclick="checkAnswer(this)">1865</button>
+         <button data-answer="correct" onclick="checkAnswer(this)">1863</button>
+         <button data-answer="incorrect" onclick="checkAnswer(this)">1780</button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">1910</button>
+    </ul>
+</div>
+
+<!--Question 2-->
+
+<div class="question">
+    <h3>Question 2: What is the West Virginia state fish?</h3>
+    <ul class="answers">
+        <button data-answer="incorrect" onclick="checkAnswer(this)">A. Brown Trout</button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">B. Rainbow Trout</button>
+        <button data-answer="correct" onclick="checkAnswer(this)">C. Brook Trout</button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">D. Golden Trout</button>
+    </ul>
+</div>
+
+<!-- Question 3 -->
+<div class="question">
+    <h3>Question 3: What city is the capitol of West Virginia?</h3>
+    <ul class="answers">
+        <button data-answer="incorrect" onclick="checkAnswer(this)">A. Morgantown</button>
+        <button data-answer="correct" onclick="checkAnswer(this)">B. Charleston</button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">C. Wheeling</button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">D. Huntington</button>
+    </ul>
+</div>
+<!-- Question 4 -->
+<div class="question">
+    <h3>Question 4: How many Division 1 schools are in West Virginia?   </h3>
+    <ul class="answers">
+        <button data-answer="correct" onclick="checkAnswer(this)">A. 2</button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">B. 1</button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">C. None</button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">D. 3</button>
+    </ul>
+</div>
+
+<!-- Question 5 -->
+<div class="question">
+    <h3>Question 5: Which of the following celebrities is NOT from West Virginia?</h3>
+    <ul class="answers">
+        <button data-answer="incorrect" onclick="checkAnswer(this)">A. Brad Paisley </button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">B. Don Knotts </button>
+        <button data-answer="correct" onclick="checkAnswer(this)">C. Thomas Rhett </button>
+        <button data-answer="incorrect" onclick="checkAnswer(this)">D. Steve Harvey</button>
+    </ul>
+</div>
+
+<a href="index.html" id="home-link" class="btn btn-lavender">Go Back to Homepage</a>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

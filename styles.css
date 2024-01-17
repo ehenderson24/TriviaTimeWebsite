@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d1cfe1; /* Lavender background */
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: url('background.avif');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    
+}
+
+.btn {
+    background-color: #967bb6; /* Darker lavender buttons */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #967bb6; /* Darker lavender footer */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+.answers button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #8e44ad; /* Lavender color for borders */
+    background-color: #fff; /* White background color */
+    color: #8e44ad; /* Lavender color for text */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.answers button:hover {
+    background-color: #8e44ad; /* Lavender color on hover */
+    color: #fff; /* White text on hover */
+}
